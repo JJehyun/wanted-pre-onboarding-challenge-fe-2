@@ -13,6 +13,7 @@
     "jsdoc": "^4.0.0"
   },
   "dependencies": {
-    "docdash": "^2.0.1"
+    "docdash": "^2.0.1",
+    "uuid": "^9.0.0"
   }
 }

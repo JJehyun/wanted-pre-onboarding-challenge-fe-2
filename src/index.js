@@ -1,7 +1,8 @@
-/** @function addition
- * @param {number} a 이거슨 테스트
- * @param {number} b 요것도 테스트
- * @returns {number} 이것도
- */
+import ToDo from "./model/Todo";
 
-const addition = (a, b) => a + b;
+/**@function addTodo
+ * @description 할 일을 추가하는 함수 , 내용 없이 추가할 수 없다.
+ * @param {ToDo} ToDo 식별자
+ * @returns {ToDo} Todo
+ */
+const addTodo = (ToDo) => {};
