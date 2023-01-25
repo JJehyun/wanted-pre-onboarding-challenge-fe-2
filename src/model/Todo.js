@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 /**
  * @class
  */
-class ToDo {
+class Todo {
   id;
   content = "";
   isDone = false;
@@ -24,7 +24,7 @@ class ToDo {
    * @returns {ToDo}
    */
   static create(todo) {
-    return new ToDo(todo);
+    return new Todo(todo);
   }
 }
-export default ToDo;
+export default Todo;
