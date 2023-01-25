@@ -29,7 +29,7 @@
 <nav >
     
     
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Todo.html">Todo</a><ul class='methods'><li data-type='method'><a href="Todo.html#.create">create</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#addTodo">addTodo</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="TodosContext.html">TodosContext</a><ul class='methods'><li data-type='method'><a href="TodosContext.html#.addTodo">addTodo</a></li><li data-type='method'><a href="TodosContext.html#.deleteAllTags">deleteAllTags</a></li><li data-type='method'><a href="TodosContext.html#.deleteAllTodos">deleteAllTodos</a></li><li data-type='method'><a href="TodosContext.html#.deleteTag">deleteTag</a></li><li data-type='method'><a href="TodosContext.html#.deleteTodo">deleteTodo</a></li><li data-type='method'><a href="TodosContext.html#.getAllTodos">getAllTodos</a></li><li data-type='method'><a href="TodosContext.html#.getTodo">getTodo</a></li><li data-type='method'><a href="TodosContext.html#.toggleTodoDone">toggleTodoDone</a></li><li data-type='method'><a href="TodosContext.html#.updateTag">updateTag</a></li><li data-type='method'><a href="TodosContext.html#.updateTodo">updateTodo</a></li></ul></li></ul><h3><a href="global.html">Global</a></h3>
     
 </nav>
 
@@ -123,30 +123,25 @@
     
 
     
-        <h3 class="subsection-title">Methods</h3>
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
 
         
-            
+                
+<h4 class="name" id="Todo">Todo</h4>
 
-    
-
-    <h4 class="name" id="addTodo"><span class="type-signature"></span>addTodo<span class="signature">(ToDo)</span><span class="type-signature"> &rarr; {<a href="Todo.html">Todo</a>}</span></h4>
-
-    
 
 
 
 
 <dl class="details">
     
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>할 일을 추가하는 함수 , 내용 없이 추가할 수 없다.</p></li></ul></dd>
-    
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line3">line 3</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line89">line 89</a>
     </li></ul></dd>
     
 
@@ -183,20 +178,11 @@
 
 
 
+    <h5 class="subsection-title">Properties:</h5>
 
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
     
 
-<table class="params">
+<table class="props">
     <thead>
     <tr>
         
@@ -218,13 +204,13 @@
 
         <tr>
             
-                <td class="name"><code>ToDo</code></td>
+                <td class="name"><code>id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Todo.html">Todo</a></span>
+<span class="param-type">string</span>
 
 
 
@@ -235,7 +221,103 @@
 
             
 
-            <td class="description last"><p>식별자</p></td>
+            <td class="description last"><p>식별자 uuid</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>할 일 내용</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isDone</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>완료 여부 , (default=false)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>category</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>카테고리</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tags</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>테그</p></td>
         </tr>
 
     
@@ -249,43 +331,28 @@
 
 
 
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+
+        </li>
+    </ul>
 
 
 
 
 
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>Todo</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Todo.html">Todo</a></span>
-
-
-
-    </dd>
-</dl>
-
+    <h5 class="h5-examples">Example</h5>
     
+    <pre class="prettyprint"><code>{id : "550e8400-e29b-41d4-a716-446655440000" , content : "농구하기" ,    isDone:false , category: "운동" , tags : [1,2,3]}</code></pre>
 
 
 
-        
-    
-
+            
     
 
     
@@ -303,7 +370,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.0</a> on Wed Jan 25 2023 14:11:21 GMT+0900 (대한민국 표준시) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.0</a> on Wed Jan 25 2023 23:56:13 GMT+0900 (대한민국 표준시) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
