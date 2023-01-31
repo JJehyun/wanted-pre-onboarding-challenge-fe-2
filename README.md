@@ -2,7 +2,7 @@
 
 
 ## 소개
-안녕하세요! 프론트엔드 개발자 김제현 입니다!
+안녕하세요! 프론트엔드 개발자 김제현 입니다! 잘 부탁드립니다!
 
 ---
 
@@ -23,7 +23,7 @@ Todo 앱을 JSDoc으로 문서화하기
 - [x] `JSDoc`을 활용해 문서화한다.
 - [x] `GitHub Page`를 활용해 `JSDoc` 정적 페이지를 배포한다
 
-  🔗 [배포링크:https://jjehyun.github.io/wanted-pre-onboarding-challenge-fe-2/]
+  🔗 [배포링크](https://jjehyun.github.io/wanted-pre-onboarding-challenge-fe-2/)
 
 ### Todo
 
